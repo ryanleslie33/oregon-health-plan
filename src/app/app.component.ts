@@ -7,4 +7,9 @@ import { Health } from './models/ohp.model';
 })
 export class AppComponent {
   title = 'app';
+  
+  selectEnroll = null;
+  enrollForm(name){
+    this.selectEnroll = true;
+  }
 }
