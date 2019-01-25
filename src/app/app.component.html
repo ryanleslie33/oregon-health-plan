@@ -36,7 +36,7 @@ Still need health insurance?
   <p> </p>
   <div *ngIf="selectInfo">
     <ul>
-      <li *ngFor="let currentHealth of health">{{currentHealth.name}}, {{currentHealth.address}}</li>
+      <li *ngFor="let currentHealth of health">{{currentHealth.name}}, {{currentHealth.address}},{{currentHealth.salary}}</li>
       </ul>
   </div>
 </div>
@@ -45,6 +45,8 @@ Still need health insurance?
   <input  [(ngModel)]="name">
   <label for="address">enter address</label>
   <input  [(ngModel)]="address">
+  <label for="salary">enter yearly income</label>
+  <input  [(ngModel)]="salary">
   <button (click)="showInfo(name,address)">enter</button>
 </div>
 

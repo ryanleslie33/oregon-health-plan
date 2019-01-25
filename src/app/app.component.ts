@@ -16,13 +16,18 @@ export class AppComponent {
     this.selectEnroll = true;
   }
 selectInfo = null;
-  showInfo(name,address) {
+  showInfo(name,address,salary) {
+    this.salary = salary;
+    let coverage = true;
     this.selectInfo = true;
-    let newHealth = new Health(name,address);
+    let newHealth = new Health(name,address,salary);
+    if(this.salary >= 35000){
+      this.coverage = false;
+    }
     this.health.push(newHealth);
 
   }
   findDoctor(name){
-    
-  }
+
+}
 }

@@ -1,3 +1,3 @@
 export class Health {
-  constructor(public name: string, public address: string) { }
+  constructor(public name: string, public address: string, public salary: number) { }
 }
