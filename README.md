@@ -6,7 +6,7 @@
 
 ## Description
 
-_This applicatioin is was built purely for educational purposes, it is replica of the oregon.gov website with a few modifications that I have added to impliment good code practice in angular while using api calls and a database_
+_This applicatioin is was built purely for educational purposes, it is replica of the oregon.gov website with a few modifications that I have added to apply good code practice in angular while using api calls and a database_
 
 ## Setup/Installation Requirements
 
@@ -17,6 +17,11 @@ _This applicatioin is was built purely for educational purposes, it is replica o
 
 
 ## Specifications
+* _user can enter there name, address, and year income to see if they are eligible for ohp health insurance, if there yearly income is above 35,000 the output will return false_.
+
+* _If user is not eligible for OHP health insurance they can click a button to see list of paid Insurance packages they have available._
+
+* _api specs-----------------------------_
 
 * _User can to enter a medical issue to receive a list of doctors in the portland area that fit the input_.
 
@@ -33,7 +38,7 @@ _This applicatioin is was built purely for educational purposes, it is replica o
 
 ## Known Bugs
 
-_there is no known bugs at this time_
+_At this time the application is not complete and will have api and database to go along with the input to record and output information other than then there is no known bugs at this time_
 
 ## Support and contact details
 
@@ -49,4 +54,4 @@ _this application is written in javascript and angular with a firebase database 
 
 *This application is Licensed under the MIT software Licence agreement. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*
 
-Copyright (c) 2018 **_{Ryan Leslie, Epicodus}_**
+Copyright (c) 2019 **_{Ryan Leslie, Epicodus}_**
