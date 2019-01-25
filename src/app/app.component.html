@@ -43,7 +43,11 @@ Still need health insurance?
   <p> </p>
 </div>
 <div *ngIf="selectEnroll">
+  <label for="name">enter name</label>
   <input  [(ngModel)]="name">
+  <label for="address">enter address</label>
+  <input  [(ngModel)]="address">
+  <button type="button" name="button">enter</button>
 </div>
 
 
