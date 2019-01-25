@@ -10,6 +10,9 @@ export class AppComponent {
   health:  Health [] = [
 
   ]
+  plans: Health [] = [
+    gold: new Health("this","that",234,true)
+  ]
 
   selectEnroll = null;
   enrollForm(){
@@ -21,13 +24,15 @@ selectInfo = null;
 
     let newHealth = new Health(name,address,salary,coverage=true);
 
-    if(this.selectEnroll.salary >= 35000){
+    if(newHealth.salary > 35000){
     newHealth.coverage = false;
+
     }
-    this.health.push(newHealth,coverage);
+    this.health.push(newHealth);
 
   }
-  findDoctor(name){
-
+  selectPlans= null;
+privatePlans(){
+  this.selectPlans = true;
 }
 }

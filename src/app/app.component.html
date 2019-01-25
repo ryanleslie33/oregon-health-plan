@@ -15,15 +15,15 @@ Still need health insurance?
 <p><br></p>
 
 <p class="sub-heading">You can enroll in or change plans if you have certain life changes, or qualify for Medicaid or CHIP.</p>
-<p><a (click)="enrollForm()"  class="btn btn-large btn-success hero-btn">SEE IF I CAN ENROLL</a>
-<a href="/have-coverage/" class="btn btn-large btn-success hero-btn">SEE IF I CAN CHANGE</a></p>
+<p><a (click)="enrollForm()"  class="btn btn-large btn-success hero-btn">SEE IF I CAN ENROLL IN OHP</a>
+<a (click)="privatePlans()" class="btn btn-large btn-success hero-btn">SEE PRIVATE HEALTH PLANS</a></p>
 
 <div class="col-xs-12" style="margin-top: 20px">
      <small><b>Looking for coverage for a small business? <a href="/small-businesses/">Learn more</a></b></small>
   <p> </p>
   <div *ngIf="selectInfo">
     <ul>
-      <li *ngFor="let currentHealth of health">{{currentHealth.name}}, {{currentHealth.address}},{{currentHealth.salary}},{{currentHealth.coverage}}</li>
+      <li *ngFor="let currentHealth of health">{{currentHealth.name}}, {{currentHealth.address}},{{currentHealth.salary}}, Am i available for coverage = {{currentHealth.coverage}}</li>
       </ul>
   </div>
 </div>
