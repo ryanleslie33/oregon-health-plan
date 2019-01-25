@@ -22,4 +22,7 @@ selectInfo = null;
     this.health.push(newHealth);
 
   }
+  findDoctor(name){
+    
+  }
 }
