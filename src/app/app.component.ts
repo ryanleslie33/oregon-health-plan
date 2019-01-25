@@ -11,8 +11,10 @@ export class AppComponent {
   health:  Health [] = [
 
   ]
-  plans: Health [] = [
-    gold: new Health("this","that",234,true)
+  plans: Plan [] = [
+     new Plan("gold package",5072328888,234.99),
+     new Plan("silver package",433433335,134.99),
+     new Plan("bronze package",434665655,109.99)
   ]
 
   selectEnroll = null;

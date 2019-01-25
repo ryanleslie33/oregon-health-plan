@@ -42,6 +42,11 @@ Still need health insurance?
   <input  [(ngModel)]="doctors">
   <button (click)="findDoctor()">enter</button>
 </div>
+<div *ngIf="selectPlans">
+  <ul>
+    <li *ngFor="let currentPlan of plans">{{currentPlan.name}}, phone-number: {{currentPlan.phone}}, monthly price: {{currentPlan.monthly}}</li>
+    </ul>
+</div>
 
 
 
