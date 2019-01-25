@@ -17,8 +17,9 @@ export class AppComponent {
   }
 selectInfo = null;
   showInfo(name,address) {
+    this.selectInfo = true;
     let newHealth = new Health(name,address);
     this.health.push(newHealth);
-    this.selectInfo = true;
+
   }
 }

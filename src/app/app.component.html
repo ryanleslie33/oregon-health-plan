@@ -6,15 +6,15 @@
   </head>
   <body>
 
-    <div id="main-body-content" class="main-body-content" role="main" tabindex="-1">
-    <div class="lite-card">
 
-      <div id="qualtrics-top-alert-container" class="hidden" aria-hidden="true"></div>
 
-  <div class="hero clearfix" >
+
+
+
+
   <div class="container">
 
-    <div class="hero-inner row">
+
         <div id="hero-content-wrapper" class="col-xs-10">
             <div class="hero-content">
                 <h1>
@@ -34,6 +34,11 @@ Still need health insurance?
 <div class="col-xs-12" style="margin-top: 20px">
      <small><b>Looking for coverage for a small business? <a href="/small-businesses/">Learn more</a></b></small>
   <p> </p>
+  <div *ngIf="selectInfo">
+    <ul>
+      <li *ngFor="let currentHealth of health">{{currentHealth.name}}, {{currentHealth.address}}</li>
+      </ul>
+  </div>
 </div>
 <div *ngIf="selectEnroll">
   <label for="name">enter name</label>
@@ -44,17 +49,19 @@ Still need health insurance?
 </div>
 
 
+
             </div>
 
         </div>
 
-    </div><!-- /hero-inner -->
+
   </div><!-- /container -->
-</div><!-- /hero -->
+
+
 
 
 <div id="secondary-alert-container" class="hidden" aria-hidden="true">
-  
+
 </div>
 <div id="secondary-cta">
     <div class="container">
@@ -232,8 +239,8 @@ Still need health insurance?
 </div>
 
 
-</div>
-  </div>
+
+
 
   </body>
 </html>
