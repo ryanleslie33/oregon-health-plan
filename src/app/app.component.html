@@ -5,29 +5,16 @@
     <title></title>
   </head>
   <body>
-
-
-
-
-
-
-
   <div class="container">
-
-
         <div id="hero-content-wrapper" class="col-xs-10">
             <div class="hero-content">
                 <h1>
 2019 Open Enrollment is over.<br>
 Still need health insurance?
 </h1>
-
-
 <p><br></p>
 
 <p class="sub-heading">You can enroll in or change plans if you have certain life changes, or qualify for Medicaid or CHIP.</p>
-
-
 <p><a (click)="enrollForm()"  class="btn btn-large btn-success hero-btn">SEE IF I CAN ENROLL</a>
 <a href="/have-coverage/" class="btn btn-large btn-success hero-btn">SEE IF I CAN CHANGE</a></p>
 
@@ -36,7 +23,7 @@ Still need health insurance?
   <p> </p>
   <div *ngIf="selectInfo">
     <ul>
-      <li *ngFor="let currentHealth of health">{{currentHealth.name}}, {{currentHealth.address}},{{currentHealth.salary}}</li>
+      <li *ngFor="let currentHealth of health">{{currentHealth.name}}, {{currentHealth.address}},{{currentHealth.salary}},{{currentHealth.coverage}}</li>
       </ul>
   </div>
 </div>
@@ -47,7 +34,7 @@ Still need health insurance?
   <input  [(ngModel)]="address">
   <label for="salary">enter yearly income</label>
   <input  [(ngModel)]="salary">
-  <button (click)="showInfo(name,address)">enter</button>
+  <button (click)="showInfo(name,address,salary)">enter</button>
 </div>
 
 <div class="">

@@ -1,1 +1,4 @@
-{}
+{ "projects": {
+    "default": "your-project-name"
+  }
+  }
