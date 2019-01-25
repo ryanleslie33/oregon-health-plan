@@ -11,16 +11,9 @@
 
       <div id="qualtrics-top-alert-container" class="hidden" aria-hidden="true"></div>
 
-
-
-
-
-
-
-<!-- General Page Layouts -->
-
-  <div class="hero clearfix" style="background-image: url(/images/hero/postoe-homepage-young-child.jpg);background-size: cover;-ms-behavior: url(/css/backgroundsize.min.htc);">
+  <div class="hero clearfix" >
   <div class="container">
+
     <div class="hero-inner row">
         <div id="hero-content-wrapper" class="col-xs-10">
             <div class="hero-content">
@@ -47,18 +40,21 @@ Still need health insurance?
   <input  [(ngModel)]="name">
   <label for="address">enter address</label>
   <input  [(ngModel)]="address">
-  <button type="button" name="button">enter</button>
+  <button (click)="showInfo(name,address)">enter</button>
 </div>
 
 
             </div>
+
         </div>
+
     </div><!-- /hero-inner -->
   </div><!-- /container -->
 </div><!-- /hero -->
 
 
 <div id="secondary-alert-container" class="hidden" aria-hidden="true">
+  
 </div>
 <div id="secondary-cta">
     <div class="container">
@@ -187,6 +183,7 @@ Still need health insurance?
     </p>
 </div>
             </div>
+
             <div class="col-md-5 col-sm-6 cell module">
 
 
@@ -197,13 +194,6 @@ Still need health insurance?
                     </a>
                 </h2>
                 <!-- ESI include for blog module -->
-
-
-
-
-
-
-
 <div id="updates-blog">
   <ol aria-labelledby="updates-blog-title" class="list-unstyled blog-list">
       <li>
@@ -236,21 +226,14 @@ Still need health insurance?
   </a>
 </div>
 
-
-
-
-
-
             </div>
         </div>
     </div>
 </div>
 
 
-
-<!-- Includes for specific pages -->
-
 </div>
   </div>
+
   </body>
 </html>

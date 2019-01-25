@@ -7,9 +7,18 @@ import { Health } from './models/ohp.model';
 })
 export class AppComponent {
   title = 'app';
-  
+  health:  Health [] = [
+
+  ]
+
   selectEnroll = null;
-  enrollForm(name){
+  enrollForm(){
     this.selectEnroll = true;
+  }
+selectInfo = null;
+  showInfo(name,address) {
+    let newHealth = new Health(name,address);
+    this.health.push(newHealth);
+    this.selectInfo = true;
   }
 }
