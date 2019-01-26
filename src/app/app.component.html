@@ -29,12 +29,13 @@
           </div>
           <div *ngIf="selectEnroll">
             <label for="name">enter name</label>
-            <input  [(ngModel)]="name">
+            <input  pattern="[a-z]" title="name" [(ngModel)]="name">
             <label for="address">enter address</label>
-            <input  [(ngModel)]="address">
+            <input type="text" title = "address" [(ngModel)]="address">
             <label for="salary">enter yearly income</label>
-            <input  [(ngModel)]="salary">
+            <input type="number" title = "enter anumber" [(ngModel)]="salary">
             <button (click)="showInfo(name,address,salary)">enter</button>
+            <button (click)=startOver()>start over</button>
           </div>
 
           <div class="">
