@@ -2,6 +2,9 @@
     "name": " john piper",
     "address": "5566 se band st",
     "salary":  200,
-    "coverage": true
+    "coverage": true,
+    "phone":253,
+    "gender":"male",
+    "birth": 88
   }]
 }

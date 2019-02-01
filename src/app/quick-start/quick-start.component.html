@@ -30,12 +30,15 @@
      <li>name: {{currentEnrolled.name}} </li>
       <li>address: {{currentEnrolled.address}} </li>
       <li> yearly income: {{currentEnrolled.salary}}</li>
+      <!-- <li> phone: {{currentEnrolled.phone}}</li>
+      <li> gender: {{currentEnrolled.gender}}</li>
+      <li> birth: {{currentEnrolled.birth}}</li> -->
      </ul>
      <button (click)="editEnroll()">edit</button>
    </div>
 </div>
 <div *ngIf="selectedEdit">
-  <input [(ngModel)]="currentEnrolled.name" [value]="currentEnrolled.name">
-  <input [(ngModel)]="currentEnrolled.address" [value]=this.currentEnrolled.address>
-  <input [(ngModel)]="currentEnrolled.salary" [value]="this.currentEnrolled.salary">
+  <input [(ngModel)]="selectedEdit.name" value = this.selectedEdit.name >
+  <input [(ngModel)]="selectedEdit.address" value = "this.selectedEdit.address" >
+  <input [(ngModel)]="currentEnrolled.salary" value="selectedAdd.salary" >
 </div>
