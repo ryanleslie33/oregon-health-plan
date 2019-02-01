@@ -1,3 +1,24 @@
 <p>
   quick-start works!
 </p>
+<h3 class="panel-title">quick start to enroll</h3>
+<div class="panel-body">
+  <div>
+    <label>name:</label>
+    <br>
+    <input #newName>
+  </div>
+
+  <div>
+    <label>Address:</label>
+    <br>
+    <input #newAddress>
+  </div>
+
+  <div>
+    <label>annual income:</label>
+    <br>
+    <textarea #newsalary></textarea>
+  </div>
+   <button (click)="submitForm(newTitle.value, newArtist.value, newDescription.value)">Add</button>
+</div>
