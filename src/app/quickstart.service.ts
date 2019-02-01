@@ -5,9 +5,12 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 export class QuickstartService {
 quickstarts: FirebaseListObservable<any[]>;
 
-  constructor(private database: AngularFireDatabase) { }
+  constructor(private database: AngularFireDatabase) {
 this.quickstarts = database.list('quickstarts');
 }
-getQuickStarts(){
-   return this.quickstarts;
+
+
+getQuickStarts() {
+   return this.quickstarts
  }
+};

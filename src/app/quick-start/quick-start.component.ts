@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FirebaseListObservable } from 'angularfire2/database';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-quick-start',
@@ -8,7 +9,8 @@ import { FirebaseListObservable } from 'angularfire2/database';
 })
 export class QuickStartComponent implements OnInit {
 quickstarts: FirebaseListObservable<any[]>;
-  constructor() { }
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
