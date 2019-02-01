@@ -11,9 +11,12 @@ _This application is was built purely for educational purposes, it is replica of
 ## Setup/Installation Requirements
 
 * _Clone this repository to your terminal_
-* _open it up in atom or Visual Studio or a text editor of your choice_
-* _run a npm install in your terminal_
-* _if everything loads correctly you should be able to run ng serve and use the application_
+* _open it up in atom or Visual Studio_
+* _run a NPM install in your terminal_
+* _if everything compiles correctly, enter NPM run start in the terminal_
+* _After entering that command it should display compiled and have no errors._
+* _After system is done compiling you should see a local Host pathway open up in your browser with the application ready to use._
+* _If you do not see a  new page open up in your browser copy and paste the one given to you in your terminal, it will most likely look like this:http://localhost:4200._
 
 
 ## Specifications
@@ -31,7 +34,7 @@ _This application is was built purely for educational purposes, it is replica of
 
 * _API specs-----------------------------these specs are to be ignored until API is correctly installed_
 
-* _User can to enter a medical issue to receive a list of doctors in the portland area that fit the input_.
+* _User can to enter a medical issue to receive a list of doctors in the Portland area that fit the input_.
 
 * _User can enter a name to receive a list of doctors in the Portland area that fit search criteria_
 
