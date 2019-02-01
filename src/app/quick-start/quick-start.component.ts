@@ -9,39 +9,39 @@ import { Enroll} from '../models/enroll.model';
   selector: 'app-quick-start',
   templateUrl: './quick-start.component.html',
   styleUrls: ['./quick-start.component.css'],
-   providers: [QuickstartService]
+  providers: [QuickstartService]
 })
 export class QuickStartComponent implements OnInit {
-  enrollId: string;
-  enrollToDisplay;
+  // enrollId: string;
+  // enrollToDisplay;
   enrolled: Enroll[] = [
 
   ]
-quickstarts: FirebaseListObservable<any[]>;
+  quickstarts: FirebaseListObservable<any[]>;
 
-  constructor(private route: Router,private location: Location,private quickstartService: QuickstartService) { }
+  constructor(private route: Router,private quickstartService: QuickstartService) { }
 
   ngOnInit() {
-    this.route.params.forEach((urlParameters) => {
-   this.enrollId = (urlParameters['id']);
- });
- this.enrollToDisplay = this.quickstartService.getEnrollById(this.enrollId);
+    //    this.route.params.forEach((urlParameters) => {
+    //   this.enrollId = (urlParameters['id']);
+    // });
+    // this.enrollToDisplay = this.quickstartService.getEnrollById(this.enrollId);
   }
   selectedAdd = null;
   submitForm(name: string, address: string, salary: number) {
-  this.selectedAdd= true;
-  var newHealth: Enroll = new Enroll(name, address, salary);
-  this.quickstartService.addHealth(newHealth);
-  this.enrolled.push(newHealth);
-  console.log(newHealth);
-}
-formEnroll(clickedEnroll){
-  this.route.navigate(['enrolled',clickedEnroll.$key]);
-}
-selectedEdit=null;
-editEnroll(){
-  this.selectedEdit=true;
-}
+    this.selectedAdd= true;
+    var newHealth: Enroll = new Enroll(name, address, salary);
+    this.quickstartService.addHealth(newHealth);
+    this.enrolled.push(newHealth);
+    console.log(newHealth);
+  }
+  formEnroll(clickedEnroll){
+    this.route.navigate(['enrolled']);
+  }
+  selectedEdit=null;
+  editEnroll(){
+    this.selectedEdit=true;
+  }
 
 
 }

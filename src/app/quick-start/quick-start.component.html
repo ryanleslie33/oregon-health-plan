@@ -1,6 +1,4 @@
-<p>
-  quick-start works!
-</p>
+
 <h3 class="panel-title">quick start to enroll</h3>
 <div class="panel-body">
   <div>
@@ -20,22 +18,22 @@
     <br>
     <textarea #newSalary></textarea>
   </div>
-   <button  (click)="submitForm(newName.value, newAddress.value, newSalary.value)">Add</button>
-   <button (click)="formEnroll(newName.value, newAddress.value, newSalary.value)">Enter enrollment</button>
+  <button  (click)="submitForm(newName.value, newAddress.value, newSalary.value)">Add</button>
+  <button (click)="formEnroll(newName.value, newAddress.value, newSalary.value)">Enter enrollment</button>
 
 </div>
 <div *ngIf="selectedAdd">
-   <div *ngFor="let currentEnrolled of enrolled | async">
-     <ul>
-     <li>name: {{currentEnrolled.name}} </li>
+  <div *ngFor="let currentEnrolled of enrolled | async">
+    <ul>
+      <li>name: {{currentEnrolled.name}} </li>
       <li>address: {{currentEnrolled.address}} </li>
       <li> yearly income: {{currentEnrolled.salary}}</li>
       <!-- <li> phone: {{currentEnrolled.phone}}</li>
       <li> gender: {{currentEnrolled.gender}}</li>
       <li> birth: {{currentEnrolled.birth}}</li> -->
-     </ul>
-     <button (click)="editEnroll()">edit</button>
-   </div>
+    </ul>
+    <button (click)="editEnroll()">edit</button>
+  </div>
 </div>
 <div *ngIf="selectedEdit">
   <input [(ngModel)]="selectedEdit.name" value = this.selectedEdit.name >
