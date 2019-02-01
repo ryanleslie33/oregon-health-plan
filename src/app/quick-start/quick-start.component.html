@@ -26,6 +26,16 @@
 </div>
 <div *ngIf="selectedAdd">
    <div *ngFor="let currentEnrolled of enrolled">
-     <p>{{currentEnrolled.name}}</p>
+     <ul>
+     <li>name: {{currentEnrolled.name}} </li>
+      <li>address: {{currentEnrolled.address}} </li>
+      <li> yearly income: {{currentEnrolled.salary}}</li>
+     </ul>
+     <button (click)="editEnroll()">edit</button>
    </div>
+</div>
+<div *ngIf="selectedEdit">
+  <input [(ngModel)]="currentEnrolled.name" [value]="currentEnrolled.name">
+  <input [(ngModel)]="currentEnrolled.address" [value]=this.currentEnrolled.address>
+  <input [(ngModel)]="currentEnrolled.salary" [value]="this.currentEnrolled.salary">
 </div>

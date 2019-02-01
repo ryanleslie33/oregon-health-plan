@@ -32,6 +32,10 @@ quickstarts: FirebaseListObservable<any[]>;
 formEnroll(){
   this.router.navigate(['enrolled']);
 }
+selectedEdit=null;
+editEnroll(){
+  this.selectedEdit=true;
+}
 
 
 }
