@@ -17,9 +17,12 @@ export class QuickStartComponent implements OnInit {
   ]
 quickstarts: FirebaseListObservable<any[]>;
 
-  constructor(private router: Router,private quickstartService: QuickstartService) { }
+  constructor(private router: Router,private location: Location,private quickstartService: QuickstartService) { }
 
   ngOnInit() {
+    this.route.params.forEach((urlParameters) => {
+   this.albumId = parseInt(urlParameters['id']);
+ });
   }
   selectedAdd = null;
   submitForm(name: string, address: string, salary: number) {
@@ -29,8 +32,8 @@ quickstarts: FirebaseListObservable<any[]>;
   this.enrolled.push(newHealth);
   console.log(newHealth);
 }
-formEnroll(){
-  this.router.navigate(['enrolled']);
+formEnroll(clickedEnroll){
+  this.router.navigate(['enrolled',clickedEnroll.$key]);
 }
 selectedEdit=null;
 editEnroll(){
