@@ -14,7 +14,10 @@ const appRoutes: Routes = [
     path: 'quick-start',
     component: QuickStartComponent
   },
-
+  {
+    path: 'enrolled',
+    component: EnrolledComponent
+  },
  ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
