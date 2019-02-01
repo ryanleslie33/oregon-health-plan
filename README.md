@@ -27,6 +27,8 @@ _This application is was built purely for educational purposes, it is replica of
 
 * _If the user clicks on the enter-enroll button next to the add button, Output will take them to a new page that lets them know there information has been submitted with a button to take them back to the home-page. _
 
+
+
 * _API specs-----------------------------these specs are to be ignored until API is correctly installed_
 
 * _User can to enter a medical issue to receive a list of doctors in the portland area that fit the input_.
