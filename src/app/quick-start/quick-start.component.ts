@@ -12,16 +12,25 @@ import { Enroll} from '../models/enroll.model';
    providers: [QuickstartService]
 })
 export class QuickStartComponent implements OnInit {
+  enrolled: Enroll[] = [
+
+  ]
 quickstarts: FirebaseListObservable<any[]>;
 
   constructor(private router: Router,private quickstartService: QuickstartService) { }
 
   ngOnInit() {
   }
+  selectedAdd = null;
   submitForm(name: string, address: string, salary: number) {
+  this.selectedAdd= true;
   var newHealth: Enroll = new Enroll(name, address, salary);
   this.quickstartService.addHealth(newHealth);
+  this.enrolled.push(newHealth);
   console.log(newHealth);
+}
+formEnroll(){
+  this.router.navigate(['enrolled']);
 }
 
 

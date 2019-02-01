@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { QuickStartComponent }   from './quick-start/quick-start.component';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { EnrolledComponent } from './enrolled/enrolled.component';
 
 
 const appRoutes: Routes = [
