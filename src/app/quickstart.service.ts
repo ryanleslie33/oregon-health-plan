@@ -12,8 +12,8 @@ currenthealth: FirebaseListObservable<any[]>;
   constructor(private database: AngularFireDatabase) {
 this.currenthealth = database.list('currenthealth');
 }
-getAlbumById(albumId: string){
-    return this.database.object('albums/' + albumId);
+getEnrollById(enrollId: string){
+    return this.database.object('currenthealth/' + enrollId);
   }
 
 

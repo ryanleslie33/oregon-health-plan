@@ -12,17 +12,20 @@ import { Enroll} from '../models/enroll.model';
    providers: [QuickstartService]
 })
 export class QuickStartComponent implements OnInit {
+  enrollId: string;
+  enrollToDisplay;
   enrolled: Enroll[] = [
 
   ]
 quickstarts: FirebaseListObservable<any[]>;
 
-  constructor(private router: Router,private location: Location,private quickstartService: QuickstartService) { }
+  constructor(private route: Router,private location: Location,private quickstartService: QuickstartService) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-   this.albumId = parseInt(urlParameters['id']);
+   this.enrollId = (urlParameters['id']);
  });
+ this.enrollToDisplay = this.quickstartService.getEnrollById(this.enrollId);
   }
   selectedAdd = null;
   submitForm(name: string, address: string, salary: number) {
@@ -33,7 +36,7 @@ quickstarts: FirebaseListObservable<any[]>;
   console.log(newHealth);
 }
 formEnroll(clickedEnroll){
-  this.router.navigate(['enrolled',clickedEnroll.$key]);
+  this.route.navigate(['enrolled',clickedEnroll.$key]);
 }
 selectedEdit=null;
 editEnroll(){

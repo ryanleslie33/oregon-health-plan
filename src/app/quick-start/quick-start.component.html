@@ -25,7 +25,7 @@
 
 </div>
 <div *ngIf="selectedAdd">
-   <div *ngFor="let currentEnrolled of enrolled">
+   <div *ngFor="let currentEnrolled of enrolled | async">
      <ul>
      <li>name: {{currentEnrolled.name}} </li>
       <li>address: {{currentEnrolled.address}} </li>
@@ -41,4 +41,9 @@
   <input [(ngModel)]="selectedEdit.name" value = this.selectedEdit.name >
   <input [(ngModel)]="selectedEdit.address" value = "this.selectedEdit.address" >
   <input [(ngModel)]="currentEnrolled.salary" value="selectedAdd.salary" >
+</div>
+<div>
+  <h3>{{(enrollToDisplay | async)?.name}}</h3>
+  <h4>{{(enrollToDisplay | async)?.address}}</h4>
+  <p>{{(enrollToDisplay | async)?.phone}}</p>
 </div>
