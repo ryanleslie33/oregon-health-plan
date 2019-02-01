@@ -3,6 +3,7 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 import { Health } from './models/ohp.model';
 import { Plan } from './models/plans.model';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { Enroll} from './models/enroll.model';
 
 @Injectable()
 export class QuickstartService {
@@ -16,4 +17,7 @@ this.currenthealth = database.list('currenthealth');
 getHealth() {
    return this.currenthealth
  }
+ addHealth(newEnroll: Enroll) {
+  this.currenthealth.push(newEnroll);
+}
 };
