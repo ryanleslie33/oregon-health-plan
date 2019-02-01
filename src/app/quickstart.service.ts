@@ -6,14 +6,14 @@ import { WelcomeComponent } from './welcome/welcome.component';
 
 @Injectable()
 export class QuickstartService {
-health: FirebaseListObservable<any[]>;
+currenthealth: FirebaseListObservable<any[]>;
 
   constructor(private database: AngularFireDatabase) {
-this.health = database.list('health');
+this.currenthealth = database.list('currenthealth');
 }
 
 
 getHealth() {
-   return this.health
+   return this.currenthealth
  }
 };
