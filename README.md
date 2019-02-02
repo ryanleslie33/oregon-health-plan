@@ -66,7 +66,7 @@ _This application is was built purely for educational purposes, it is replica of
 
 ## Known Bugs
 
-_At this time the application is not complete and will have API and database to go along with the input to record and output information other than then there is no known bugs at this time_
+_At this time the application is not complete and will have API for the input field that says doctor look-up, The create user name and password fields don't actually save your information into anything at this time, and on the login page though it tells you that you have logged in it is not actually vetting your info._
 
 ## Support and contact details
 
