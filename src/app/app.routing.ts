@@ -4,6 +4,7 @@ import { QuickStartComponent }   from './quick-start/quick-start.component';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { EnrolledComponent } from './enrolled/enrolled.component';
+import { LoginComponent } from './login/login.component';
 
 
 const appRoutes: Routes = [
@@ -18,6 +19,10 @@ const appRoutes: Routes = [
   {
     path: 'enrolled',
     component: EnrolledComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
   },
  ];
 
