@@ -1,6 +1,12 @@
 .panel-body{
   background-color: #42dcf4;
+  font-style: oblique;
+  font-size: 30px;
 }
 .output{
   background-color: #42dcf4;
+  font-size: 30px;
+}
+.jumbotron{
+  font-size: 50px;
 }
