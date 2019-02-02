@@ -1,12 +1,15 @@
 
-<h3 class="panel-title">quick start to enroll</h3>
+<div class="img">
+  <img src="..\img\ohp.png" alt="">
+</div>
+<h3 class="jumbotron">Quick start to enroll</h3>
+
 <div class="panel-body">
   <div>
-    <label>name:</label>
+    <label>Name:</label>
     <br>
     <input #newName>
   </div>
-
   <div>
     <label>Address:</label>
     <br>
@@ -14,7 +17,7 @@
   </div>
 
   <div>
-    <label>annual income:</label>
+    <label>Annual Income:</label>
     <br>
     <textarea #newSalary></textarea>
   </div>
@@ -22,6 +25,9 @@
   <button (click)="formEnroll(newName.value, newAddress.value, newSalary.value)">Enter enrollment</button>
 
 </div>
+<div class="output">
+
+
 <div *ngIf="selectedAdd">
   <div *ngFor="let currentEnrolled of enrolled ">
     <ul>
@@ -44,4 +50,5 @@
   <h3>{{(enrollToDisplay | async)?.name}}</h3>
   <h4>{{(enrollToDisplay | async)?.address}}</h4>
   <p>{{(enrollToDisplay | async)?.phone}}</p>
+</div>
 </div>
