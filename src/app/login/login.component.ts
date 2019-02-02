@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+loggedIn(){
+  console.log("working")
+  alert("You have successfully logged in");
+}
   constructor() { }
 
   ngOnInit() {

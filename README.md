@@ -20,7 +20,11 @@ _This application is was built purely for educational purposes, it is replica of
 
 
 ## Specifications
-* _user can enter there name, address, and year income to see if they are eligible for OHP health insurance, if there yearly income is above 35,000 the output will return false_.
+* _The initial home-page will as a user to sign in through google authentication._
+
+![image](https://user-images.githubusercontent.com/43968782/52170116-4fdb6000-26f9-11e9-911f-7d48ff1e880a.png)
+
+* _User can enter there name, address, and year income to see if they are eligible for OHP health insurance, if there yearly income is above 35,000 the output will return false_
 
 * _If user is not eligible for OHP health insurance they can click a button to see list of paid Insurance packages they have available._
 
@@ -30,14 +34,21 @@ _This application is was built purely for educational purposes, it is replica of
 
 ![image](https://user-images.githubusercontent.com/43968782/52155615-7e453680-2638-11e9-89c8-12a44df897bd.png)
 
-* _If the user clicks on the enter-enroll button next to the add button, Output will take them to a new page that lets them know there information has been submitted with a button to take them back to the home-page. _
-![image](https://user-images.githubusercontent.com/43968782/52154883-bfd3e280-2634-11e9-9f59-df88f77ec988.png)
+* _Only the users name, address, and salary will be displayed onto the screen and saved to the database, The user name and password that you create will give you an option to be saved after you click enter enrollment._
+
+
+* _If a user clicks on the edit button, Output will be three input fields  that match the input fields from above with a live edit._
+
+* _A user can enter multiple inputs with the input fields and it will save them into the database._
+
+* _If the user clicks on the enter-enroll button next to the add button, Output will take them to a new page that lets them know there information has been submitted with a button to take them back to the home-page. This information is pulled from the database based on the last inputted information. _
+![image](https://user-images.githubusercontent.com/43968782/52170094-e4918e00-26f8-11e9-9369-d604d10827d5.png)
 
 
 
 * _API specs-----------------------------these specs are to be ignored until API is correctly installed_
 
-* _User can to enter a medical issue to receive a list of doctors in the Portland area that fit the input_.
+* _User can to enter a medical issue to receive a list of doctors in the Portland area that fit the input_
 
 * _User can enter a name to receive a list of doctors in the Portland area that fit search criteria_
 
