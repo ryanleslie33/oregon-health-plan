@@ -8,18 +8,18 @@
   <div>
     <label>Name:</label>
     <br>
-    <input #newName>
+  <input [(ngModel)]='newEnroll.name' #newName>
   </div>
   <div>
     <label>Address:</label>
     <br>
-    <input #newAddress>
+    <input [(ngModel)]='newEnroll.address' #newAddress>
   </div>
 
   <div>
     <label>Annual Income:</label>
     <br>
-    <textarea #newSalary></textarea>
+    <input [(ngModel)]='newEnroll.salary' #newSalary>
   </div>
   <button  (click)="submitForm(newName.value, newAddress.value, newSalary.value);newName.value='';newAddress.value='';newSalary.value='';">Add</button>
   <button (click)="formEnroll(newName.value, newAddress.value, newSalary.value)">Enter enrollment</button>
@@ -38,13 +38,13 @@
       <li> gender: {{currentEnrolled.gender}}</li>
       <li> birth: {{currentEnrolled.birth}}</li> -->
     </ul>
-    <button (click)="editEnroll()">edit</button>
+    <button (click)="editEnroll(currentEnrolled)">edit</button>
   </div>
 </div>
 <div *ngIf="selectedEdit">
-  <input [(ngModel)]="selectedEdit.name" value = this.selectedEdit.name >
-  <input [(ngModel)]="selectedEdit.address" value = "this.selectedEdit.address" >
-  <input [(ngModel)]="currentEnrolled.salary" value="selectedAdd.salary" >
+  <input [(ngModel)]="selectedEdit.name" value = "selectedEdit.name" >
+  <input [(ngModel)]="selectedEdit.address" value = "selectedEdit.address" >
+  <input [(ngModel)]="selectedEdit.salary" value="selectedEdit.salary" >
 </div>
 <div>
   <h3>{{(enrollToDisplay | async)?.name}}</h3>

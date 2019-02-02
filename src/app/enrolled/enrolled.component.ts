@@ -13,7 +13,8 @@ import { Enroll} from '../models/enroll.model';
     providers: [QuickstartService]
 })
 export class EnrolledComponent implements OnInit {
-
+enrollment;
+enrollId: string;
     constructor(private router: Router, private route: ActivatedRoute,
       private quickstartService: QuickstartService) { }
 
