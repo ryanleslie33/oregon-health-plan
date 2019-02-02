@@ -20,9 +20,9 @@ _This application is was built purely for educational purposes, it is replica of
 
 
 ## Specifications
-* _The initial home-page will as a user to sign in through google authentication._
+* _The initial home-page will give a user the option to sign in through google authentication in the right hand corner._
 
-![image](https://user-images.githubusercontent.com/43968782/52170116-4fdb6000-26f9-11e9-911f-7d48ff1e880a.png)
+![image](https://user-images.githubusercontent.com/43968782/52170155-18b97e80-26fa-11e9-9cbd-9f0c2bd3ef14.png)
 
 * _User can enter there name, address, and year income to see if they are eligible for OHP health insurance, if there yearly income is above 35,000 the output will return false_
 
@@ -41,10 +41,13 @@ _This application is was built purely for educational purposes, it is replica of
 
 * _A user can enter multiple inputs with the input fields and it will save them into the database._
 
-* _If the user clicks on the enter-enroll button next to the add button, Output will take them to a new page that lets them know there information has been submitted with a button to take them back to the home-page. This information is pulled from the database based on the last inputted information. _
+* _If the user clicks on the enter-enroll button next to the add button, Output will take them to a new page that lets them know there information has been submitted with a button to take them back to the home-page. This information is pulled from the database based on the last inputted information._
+
 ![image](https://user-images.githubusercontent.com/43968782/52170094-e4918e00-26f8-11e9-9369-d604d10827d5.png)
 
+* _The Get contact link next to the quick-start link will ask to be directed back to the Home-Page using the original link from its replica website._
 
+* _The find-local help link will take you to a different page on the healthcare.gov website that askes you to enter in your area to help you find a representative or help line to guide you through the website._
 
 * _API specs-----------------------------these specs are to be ignored until API is correctly installed_
 
