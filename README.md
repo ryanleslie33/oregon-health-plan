@@ -28,7 +28,10 @@ _This application is was built purely for educational purposes, it is replica of
 
 * _If user fills out the forms and clicks on add, Output will save the users information onto the database and display the information on the screen._
 
+![image](https://user-images.githubusercontent.com/43968782/52155615-7e453680-2638-11e9-89c8-12a44df897bd.png)
+
 * _If the user clicks on the enter-enroll button next to the add button, Output will take them to a new page that lets them know there information has been submitted with a button to take them back to the home-page. _
+![image](https://user-images.githubusercontent.com/43968782/52154883-bfd3e280-2634-11e9-9f59-df88f77ec988.png)
 
 
 
