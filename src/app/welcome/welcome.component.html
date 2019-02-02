@@ -24,7 +24,7 @@
             <p> </p>
             <div *ngIf="selectInfo">
               <ul>
-                <li *ngFor="let currenthealth of health | async ">{{currenthealth.name}}, {{currenthealth.address}},{{currenthealth.salary}}, Am i available for coverage = {{currenthealth.coverage}}</li>
+                <li *ngFor="let currenthealth of health ">{{currenthealth.name}}, {{currenthealth.address}},{{currenthealth.salary}}, Am i available for coverage = {{currenthealth.coverage}}</li>
               </ul>
             </div>
           </div>

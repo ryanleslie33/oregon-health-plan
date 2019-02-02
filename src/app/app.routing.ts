@@ -17,7 +17,7 @@ const appRoutes: Routes = [
     component: QuickStartComponent
   },
   {
-    path: 'enrolled',
+    path: 'enrolled/:id',
     component: EnrolledComponent
   },
   {

@@ -10,7 +10,7 @@ import { Plan } from '../models/plans.model';
 })
 export class WelcomeComponent implements OnInit {
   health:  Health [] = [
-    
+
   ]
   plans: Plan [] = [
     new Plan("gold package",5072328888,234.99),

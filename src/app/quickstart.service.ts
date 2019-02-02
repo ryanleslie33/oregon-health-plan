@@ -7,20 +7,20 @@ import { Enroll} from './models/enroll.model';
 
 @Injectable()
 export class QuickstartService {
-currenthealth: FirebaseListObservable<any[]>;
+currenthealth: FirebaseListObservable<Enroll[]>;
 
   constructor(private database: AngularFireDatabase) {
 this.currenthealth = database.list('currenthealth');
 }
-// getEnrollById(enrollId: string){
-//     return this.database.object('currenthealth/' + enrollId);
-//   }
+getEnrollById(enrollId: string){
+    return this.database.object('currenthealth/' + enrollId);
+  }
 
 
 getHealth() {
    return this.currenthealth
  }
  addHealth(newEnroll: Enroll) {
-  this.currenthealth.push(newEnroll);
+  return this.currenthealth.push(newEnroll);
 }
 };
