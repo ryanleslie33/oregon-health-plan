@@ -18,7 +18,7 @@
     <br>
     <textarea #newSalary></textarea>
   </div>
-  <button  (click)="submitForm(newName.value, newAddress.value, newSalary.value)">Add</button>
+  <button  (click)="submitForm(newName.value, newAddress.value, newSalary.value);newName.value='';newAddress.value='';newSalary.value='';">Add</button>
   <button (click)="formEnroll(newName.value, newAddress.value, newSalary.value)">Enter enrollment</button>
 
 </div>
