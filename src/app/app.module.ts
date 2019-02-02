@@ -10,6 +10,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { EnrolledComponent } from './enrolled/enrolled.component';
 import { LoginComponent } from './login/login.component';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
   authDomain: masterFirebaseConfig.authDomain,
@@ -30,7 +31,8 @@ export const firebaseConfig = {
     FormsModule,
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+        AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

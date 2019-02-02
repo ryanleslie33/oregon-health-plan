@@ -5,6 +5,15 @@
 <h3 class="jumbotron">Quick Start to Enroll</h3>
 
 <div class="panel-body">
+  <div >
+    <label for="userName">Create User Name</label>
+    <input >
+  </div>
+  <div >
+    <label for="userPassword">Create User Password</label>
+    <input type ="password" >
+  </div>
+
   <div>
     <label>Name:</label>
     <br>
@@ -21,8 +30,8 @@
     <br>
     <input [(ngModel)]='newEnroll.salary' #newSalary>
   </div>
-  <button  (click)="submitForm(newName.value, newAddress.value, newSalary.value);newName.value='';newAddress.value='';newSalary.value='';">Add</button>
-  <button (click)="formEnroll(newName.value, newAddress.value, newSalary.value)">Enter enrollment</button>
+  <button  (click)="submitForm();">Add</button>
+  <button (click)="formEnroll()">Enter enrollment</button>
 
 </div>
 <div class="output">
