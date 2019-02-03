@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { EnrolledComponent } from './enrolled/enrolled.component';
 import { LoginComponent } from './login/login.component';
+import { DoctorFindComponent } from './doctor-find/doctor-find.component';
 
 
 const appRoutes: Routes = [
@@ -23,6 +24,10 @@ const appRoutes: Routes = [
   {
     path: 'login',
     component: LoginComponent
+  },
+  {
+    path: 'doctor',
+    component: DoctorFindComponent
   },
  ];
 

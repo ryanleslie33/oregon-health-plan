@@ -41,8 +41,8 @@
 
           <div class="">
             <label for="doctors">look up doctors in your area</label>
-            <input  [(ngModel)]="doctors">
-            <button (click)="findDoctor()">enter</button>
+
+            <button routerLink="doctor">enter</button>
           </div>
           <div *ngIf="selectPlans">
             <ul>

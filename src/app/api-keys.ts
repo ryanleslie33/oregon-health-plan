@@ -6,3 +6,4 @@ export const masterFirebaseConfig = {
  storageBucket: "oregon-health.appspot.com",
  messagingSenderId: "335545847198"
   };
+  export const doctorKey = "{96f18561aaa75db4fdd9ef618242d8ae}"

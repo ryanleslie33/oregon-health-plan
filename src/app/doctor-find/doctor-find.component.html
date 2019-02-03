@@ -1,0 +1,46 @@
+<h1>Doctor search</h1>
+
+<form>
+  <div class="form-group">
+    <label for="name">Date</label>
+    <input type=name #doctorName>
+  </div>
+
+  <button (click)="findDoctorName(doctorName.value)">Get Doctor</button>
+</form>
+
+<html>
+
+<body>
+      <table>
+        <thead>
+          <th>Name</th>
+          <th>Title</th>
+          <th>Picture</th>
+          <th>practices</th>
+        </thead>
+        <tbody>
+          {{data}}
+          <tr>
+            <td><a href="{{attribution_url}}" target="_new">{{profile.first_name}} {{profile.last_name}}</a><br>
+              <!-- <img src="{{ratings.0.image_url_small}}"></img></td> -->
+              <td>{{profile.title}}</td>
+              <!-- <td><img src="{{profile.image_url}}"></img></td> -->
+              <td>
+
+                <p class="address">
+                  {{practices}}
+                  {{name}}<br>
+                  {{visit_address.street}}<br>
+                  {{visit_address.city}}, {{visit_address.state}} {{visit_address.zip}}
+                  <a href="{{website}}">visit website</a>
+                  <br>
+                    <!-- {{if accepts_new_patients}}is accepting new patients{{/if}} -->
+                  {{practices}}
+                </p></td>
+              </tr>
+              {{data}}
+            </tbody>
+          </table>
+    </body>
+  </html>

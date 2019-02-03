@@ -12,6 +12,7 @@ import { EnrolledComponent } from './enrolled/enrolled.component';
 import { LoginComponent } from './login/login.component';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { HttpModule } from '@angular/http';
+import { DoctorFindComponent } from './doctor-find/doctor-find.component';
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
   authDomain: masterFirebaseConfig.authDomain,
@@ -25,7 +26,8 @@ export const firebaseConfig = {
     QuickStartComponent,
     WelcomeComponent,
     EnrolledComponent,
-    LoginComponent
+    LoginComponent,
+    DoctorFindComponent
   ],
   imports: [
     BrowserModule,
