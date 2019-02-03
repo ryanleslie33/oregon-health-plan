@@ -1,4 +1,4 @@
-<h1>Doctor search</h1>
+<h1>Curiosity Images</h1>
 
 <form>
   <div class="form-group">
@@ -8,10 +8,20 @@
 
   <button (click)="findDoctorName(doctorName.value)">Get Doctor</button>
 </form>
-
+<!DOCTYPE html>
 <html>
-
+<head>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+</head>
 <body>
+  <h3>BetterDoctor - Doctor Search Results</h3>
+  <form id="form" action="index.html" method="post">
+    <label for="name">enter name of doctor or symptoms </label>
+    <input id="inputName" type="text" name="medical" value="">
+    <button type="submit" name="button">Enter</button>
+    <div id="content-placeholder"></div>
+    <script id="docs-template" type="text/x-handlebars-template">
       <table>
         <thead>
           <th>Name</th>
@@ -20,27 +30,35 @@
           <th>practices</th>
         </thead>
         <tbody>
-          {{data}}
+          {{#data}}
           <tr>
             <td><a href="{{attribution_url}}" target="_new">{{profile.first_name}} {{profile.last_name}}</a><br>
-              <!-- <img src="{{ratings.0.image_url_small}}"></img></td> -->
+              <img src="{{ratings.0.image_url_small}}"></img></td>
               <td>{{profile.title}}</td>
-              <!-- <td><img src="{{profile.image_url}}"></img></td> -->
+              <td><img src="{{profile.image_url}}"></img></td>
               <td>
 
                 <p class="address">
-                  {{practices}}
+                  {{#practices}}
                   {{name}}<br>
                   {{visit_address.street}}<br>
                   {{visit_address.city}}, {{visit_address.state}} {{visit_address.zip}}
                   <a href="{{website}}">visit website</a>
                   <br>
-                    <!-- {{if accepts_new_patients}}is accepting new patients{{/if}} -->
-                  {{practices}}
+                    {{#if accepts_new_patients}}is accepting new patients{{/if}}
+                  {{/practices}}
                 </p></td>
               </tr>
-              {{data}}
+              {{/data}}
             </tbody>
           </table>
+        </script>
+      </form>
+      <div> *ngFor="let doctor of doctors">
+                 <td class="text-center" style="width: 15px;">{{response.visit_address.state}}</td>
+                 <!-- <td class="text-center" style="width: 15px;">{{doctor.visit_address.state}}</td> -->
+                 <!-- <td class="text-center" style="width: 200px;">{{doctor.data}}</td> -->
+                 <td class="text-center">{{post.body}}</td>
+             </div>
     </body>
   </html>
